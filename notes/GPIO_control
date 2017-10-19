@@ -1,0 +1,10 @@
+import RPi.GPIO as GPIO   # This imports the GPIO stuff.
+GPIO.setmode(GPIO.BOARD)  # This sets the bin numbering.
+			  # Board is as you see, BCM
+			  # is how the CPU sees.
+GPIO.setup(x,GPIO.OUT/IN) # Sets the pin up as an output
+			  # or input. x id pin number
+GPIO.output(x,GPIO.HIGH/Low) # HIGH = On, LOW = Off
+
+GPIO.cleanup()   # Resets any pins used during the code.
+		 # Good practive to finsh with.
